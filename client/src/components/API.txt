@@ -1,0 +1,5 @@
+coin: 7abf43d1fd7e9077861e7bb14a3d46fb
+
+fetch("http://api.coinlayer.com/live ? access_key=+7abf43d1fd7e9077861e7bb14a3d46fb")
+
+ggmap: AIzaSyAzpy2BKZQxOkOnc7HOwyOrt_JznCYYZ_w

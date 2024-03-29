@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: normal;
+	  
+  color: #ffffff;
+  background-color: #101010;
+  
+  margin: 0;
+  padding: 0;
+
+  border-radius: 10px;
+}
+
+* { 
+  margin: 0; 
+  padding: 0;
+  color: #ffffff;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+p {
+  color: #ffffff9a;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.icon {
+  border-radius: 10px;
+  width: 70px;
+  padding: 15px;
+
+  cursor: pointer;
+  transition: filter 1s ease;
+}
+
+.icon:hover {
+  background-color: #2A2A2A;
+  background-color: linear-gradient(0deg, #161616 0%, #2A2A2A 100%);
+  transition: filter 1s ease;
+}
+
+/* .MuiMenu-list.MenuMobile {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */

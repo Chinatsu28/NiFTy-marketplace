@@ -1,0 +1,255 @@
+digraph G {
+  graph [ ratio = "auto", page = "100", compound =true, bgcolor = "#2e3e56" ];
+  node [ style = "filled", fillcolor = "#edad56", color = "#edad56", penwidth =3 ];
+  edge [ color = "#fcfcfc", penwidth =2, fontname = "helvetica Neue Ultra Light" ];
+subgraph "clusterOwnership" {
+  graph [ label = "Ownership", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "Ownership.<Constructor>" [ label = "<Constructor>", color = "#FF9797", fillcolor = "#FF9797" ];
+  "Ownership.mint" [ label = "mint", color = "#FF9797", fillcolor = "#FF9797" ];
+  "Ownership.batch_mint" [ label = "batch_mint", color = "#FF9797", fillcolor = "#FF9797" ];
+  "Ownership.getOwnershipByUser" [ label = "getOwnershipByUser", color = "#FF9797", fillcolor = "#FF9797" ];
+  "Ownership.getTotalOwnedCourse" [ label = "getTotalOwnedCourse", color = "#FF9797", fillcolor = "#FF9797" ];
+  "Ownership.createUser" [ label = "createUser", color = "#FF9797", fillcolor = "#FF9797" ];
+  "Ownership.getOwnerByCourse" [ label = "getOwnerByCourse", color = "#FF9797", fillcolor = "#FF9797" ];
+  "Ownership.update" [ label = "update", color = "brown", fillcolor = "#FF9797" ];
+  "Ownership.addUser" [ label = "addUser", color = "#FF9797", fillcolor = "#FF9797" ];
+  "Ownership.burn" [ label = "burn", color = "#FF9797", fillcolor = "#FF9797" ];
+  "Ownership._mint" [ label = "_mint" ];
+  "Ownership._isApprovedOrOwner" [ label = "_isApprovedOrOwner" ];
+  "Ownership._burn" [ label = "_burn" ];
+  "Ownership.ownerOf" [ label = "ownerOf" ];
+}
+
+subgraph "clusterIERC165" {
+  graph [ label = "IERC165  (iface)", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "IERC165.supportsInterface" [ label = "supportsInterface", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+}
+
+subgraph "clusterIERC721" {
+  graph [ label = "IERC721", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "IERC721.balanceOf" [ label = "balanceOf", color = "#FF9797", fillcolor = "#FF9797" ];
+  "IERC721.ownerOf" [ label = "ownerOf", color = "#FF9797", fillcolor = "#FF9797" ];
+  "IERC721.safeTransferFrom" [ label = "safeTransferFrom", color = "#FF9797", fillcolor = "#FF9797" ];
+  "IERC721.transferFrom" [ label = "transferFrom", color = "#FF9797", fillcolor = "#FF9797" ];
+  "IERC721.approve" [ label = "approve", color = "#FF9797", fillcolor = "#FF9797" ];
+  "IERC721.getApproved" [ label = "getApproved", color = "#FF9797", fillcolor = "#FF9797" ];
+  "IERC721.setApprovalForAll" [ label = "setApprovalForAll", color = "#FF9797", fillcolor = "#FF9797" ];
+  "IERC721.isApprovedForAll" [ label = "isApprovedForAll", color = "#FF9797", fillcolor = "#FF9797" ];
+}
+
+subgraph "clusterIERC721Receiver" {
+  graph [ label = "IERC721Receiver", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "IERC721Receiver.onERC721Received" [ label = "onERC721Received", color = "#FF9797", fillcolor = "#FF9797" ];
+}
+
+subgraph "clusterSafeMath" {
+  graph [ label = "SafeMath  (lib)", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "SafeMath.add" [ label = "add", color = "#f2c383", fillcolor = "#f2c383" ];
+  "SafeMath.sub" [ label = "sub", color = "#f2c383", fillcolor = "#f2c383" ];
+  "SafeMath.mul" [ label = "mul", color = "#f2c383", fillcolor = "#f2c383" ];
+  "SafeMath.div" [ label = "div", color = "#f2c383", fillcolor = "#f2c383" ];
+  "SafeMath.mod" [ label = "mod", color = "#f2c383", fillcolor = "#f2c383" ];
+}
+
+subgraph "clusterAddress" {
+  graph [ label = "Address  (lib)", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "Address.isContract" [ label = "isContract", color = "#f2c383", fillcolor = "#f2c383" ];
+}
+
+subgraph "clusterCounters" {
+  graph [ label = "Counters  (lib)", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "Counters.current" [ label = "current", color = "#f2c383", fillcolor = "#f2c383" ];
+  "Counters.increment" [ label = "increment", color = "#f2c383", fillcolor = "#f2c383" ];
+  "Counters.decrement" [ label = "decrement", color = "#f2c383", fillcolor = "#f2c383" ];
+}
+
+subgraph "clusterERC165" {
+  graph [ label = "ERC165", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "ERC165.<Constructor>" [ label = "<Constructor>", color = "#f2c383", fillcolor = "#f2c383" ];
+  "ERC165.supportsInterface" [ label = "supportsInterface", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "ERC165._registerInterface" [ label = "_registerInterface" ];
+}
+
+subgraph "clusterERC721" {
+  graph [ label = "ERC721", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "ERC721.<Constructor>" [ label = "<Constructor>", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC721.balanceOf" [ label = "balanceOf", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC721.ownerOf" [ label = "ownerOf" ];
+  "ERC721.approve" [ label = "approve", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC721.getApproved" [ label = "getApproved", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC721.setApprovalForAll" [ label = "setApprovalForAll", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC721.isApprovedForAll" [ label = "isApprovedForAll" ];
+  "ERC721.transferFrom" [ label = "transferFrom", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC721.safeTransferFrom" [ label = "safeTransferFrom" ];
+  "ERC721._exists" [ label = "_exists" ];
+  "ERC721._isApprovedOrOwner" [ label = "_isApprovedOrOwner" ];
+  "ERC721._mint" [ label = "_mint", color = "#f2c383", fillcolor = "#f2c383" ];
+  "ERC721._burn" [ label = "_burn", color = "#f2c383", fillcolor = "#f2c383" ];
+  "ERC721._transferFrom" [ label = "_transferFrom" ];
+  "ERC721._checkOnERC721Received" [ label = "_checkOnERC721Received" ];
+  "ERC721._clearApproval" [ label = "_clearApproval" ];
+}
+
+subgraph "clusterIERC721Enumerable" {
+  graph [ label = "IERC721Enumerable", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "IERC721Enumerable.totalSupply" [ label = "totalSupply", color = "#FF9797", fillcolor = "#FF9797" ];
+  "IERC721Enumerable.tokenOfOwnerByIndex" [ label = "tokenOfOwnerByIndex", color = "#FF9797", fillcolor = "#FF9797" ];
+  "IERC721Enumerable.tokenByIndex" [ label = "tokenByIndex", color = "#FF9797", fillcolor = "#FF9797" ];
+  "IERC721Enumerable._transferFrom" [ label = "_transferFrom" ];
+  "IERC721Enumerable._mint" [ label = "_mint" ];
+  "IERC721Enumerable._burn" [ label = "_burn" ];
+}
+
+subgraph "clusterERC721Enumerable" {
+  graph [ label = "ERC721Enumerable", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "ERC721Enumerable.<Constructor>" [ label = "<Constructor>", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC721Enumerable.tokenOfOwnerByIndex" [ label = "tokenOfOwnerByIndex", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC721Enumerable.totalSupply" [ label = "totalSupply" ];
+  "ERC721Enumerable.tokenByIndex" [ label = "tokenByIndex", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC721Enumerable._transferFrom" [ label = "_transferFrom", color = "#f2c383", fillcolor = "#f2c383" ];
+  "ERC721Enumerable._mint" [ label = "_mint", color = "#f2c383", fillcolor = "#f2c383" ];
+  "ERC721Enumerable._burn" [ label = "_burn", color = "#f2c383", fillcolor = "#f2c383" ];
+  "ERC721Enumerable._tokensOfOwner" [ label = "_tokensOfOwner", color = "#f2c383", fillcolor = "#f2c383" ];
+  "ERC721Enumerable._addTokenToOwnerEnumeration" [ label = "_addTokenToOwnerEnumeration" ];
+  "ERC721Enumerable._addTokenToAllTokensEnumeration" [ label = "_addTokenToAllTokensEnumeration" ];
+  "ERC721Enumerable._removeTokenFromOwnerEnumeration" [ label = "_removeTokenFromOwnerEnumeration" ];
+  "ERC721Enumerable._removeTokenFromAllTokensEnumeration" [ label = "_removeTokenFromAllTokensEnumeration" ];
+  "ERC721Enumerable.balanceOf" [ label = "balanceOf" ];
+}
+
+subgraph "clusterIERC721Metadata" {
+  graph [ label = "IERC721Metadata", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "IERC721Metadata.name" [ label = "name", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IERC721Metadata.symbol" [ label = "symbol", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IERC721Metadata.tokenURI" [ label = "tokenURI", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IERC721Metadata._burn" [ label = "_burn" ];
+}
+
+subgraph "clusterERC721Metadata" {
+  graph [ label = "ERC721Metadata", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "ERC721Metadata.<Constructor>" [ label = "<Constructor>", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC721Metadata.name" [ label = "name", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "ERC721Metadata.symbol" [ label = "symbol", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "ERC721Metadata.tokenURI" [ label = "tokenURI", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "ERC721Metadata._setTokenURI" [ label = "_setTokenURI", color = "#f2c383", fillcolor = "#f2c383" ];
+  "ERC721Metadata._burn" [ label = "_burn", color = "#f2c383", fillcolor = "#f2c383" ];
+}
+
+subgraph "clusterERC721Full" {
+  graph [ label = "ERC721Full", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "ERC721Full.<Constructor>" [ label = "<Constructor>", color = "#FF9797", fillcolor = "#FF9797" ];
+}
+
+subgraph "clusterto" {
+  graph [ label = "to", color = "#e8726d", fontcolor = "#f0f0f0", style = "rounded,dashed", bgcolor = "#3b4b63" ];
+  "to.isContract" [ label = "isContract" ];
+}
+
+  "Ownership.mint";
+  "Ownership._mint";
+  "Ownership.batch_mint";
+  "Ownership.burn";
+  "Ownership._isApprovedOrOwner";
+  "Ownership._burn";
+  "Ownership.ownerOf";
+  "ERC165.<Constructor>";
+  "ERC165._registerInterface";
+  "ERC721.approve";
+  "ERC721.ownerOf";
+  "ERC721.isApprovedForAll";
+  "ERC721.getApproved";
+  "ERC721._exists";
+  "ERC721.transferFrom";
+  "ERC721._isApprovedOrOwner";
+  "ERC721._transferFrom";
+  "ERC721.safeTransferFrom";
+  "ERC721._checkOnERC721Received";
+  "ERC721._mint";
+  "ERC721._burn";
+  "ERC721._clearApproval";
+  "to.isContract";
+  "ERC721Enumerable.tokenOfOwnerByIndex";
+  "ERC721Enumerable.balanceOf";
+  "ERC721Enumerable.tokenByIndex";
+  "ERC721Enumerable.totalSupply";
+  "IERC721Enumerable._transferFrom";
+  "ERC721Enumerable._removeTokenFromOwnerEnumeration";
+  "ERC721Enumerable._addTokenToOwnerEnumeration";
+  "IERC721Enumerable._mint";
+  "ERC721Enumerable._addTokenToAllTokensEnumeration";
+  "IERC721Enumerable._burn";
+  "ERC721Enumerable._removeTokenFromAllTokensEnumeration";
+  "ERC721Metadata.tokenURI";
+  "ERC721Metadata._setTokenURI";
+  "IERC721Metadata._burn";
+  "Ownership.mint" -> "Ownership._mint" [ color = "#1bc6a6" ];
+  "Ownership.batch_mint" -> "Ownership.mint" [ color = "#1bc6a6" ];
+  "Ownership.burn" -> "Ownership._isApprovedOrOwner" [ color = "#1bc6a6" ];
+  "Ownership.burn" -> "Ownership._burn" [ color = "#1bc6a6" ];
+  "Ownership.burn" -> "Ownership.ownerOf" [ color = "#1bc6a6" ];
+  "ERC165.<Constructor>" -> "ERC165._registerInterface" [ color = "#1bc6a6" ];
+  "ERC165.<Constructor>" -> "ERC165._registerInterface" [ color = "#1bc6a6" ];
+  "ERC721.approve" -> "ERC721.ownerOf" [ color = "#1bc6a6" ];
+  "ERC721.approve" -> "ERC721.isApprovedForAll" [ color = "#1bc6a6" ];
+  "ERC721.getApproved" -> "ERC721._exists" [ color = "#1bc6a6" ];
+  "ERC721.transferFrom" -> "ERC721._isApprovedOrOwner" [ color = "#1bc6a6" ];
+  "ERC721.transferFrom" -> "ERC721._transferFrom" [ color = "#1bc6a6" ];
+  "ERC721.safeTransferFrom" -> "ERC721.safeTransferFrom" [ color = "#1bc6a6" ];
+  "ERC721.safeTransferFrom" -> "ERC721.transferFrom" [ color = "#1bc6a6" ];
+  "ERC721.safeTransferFrom" -> "ERC721._checkOnERC721Received" [ color = "#1bc6a6" ];
+  "ERC721._isApprovedOrOwner" -> "ERC721._exists" [ color = "#1bc6a6" ];
+  "ERC721._isApprovedOrOwner" -> "ERC721.ownerOf" [ color = "#1bc6a6" ];
+  "ERC721._isApprovedOrOwner" -> "ERC721.getApproved" [ color = "#1bc6a6" ];
+  "ERC721._isApprovedOrOwner" -> "ERC721.isApprovedForAll" [ color = "#1bc6a6" ];
+  "ERC721._mint" -> "ERC721._exists" [ color = "#1bc6a6" ];
+  "ERC721._burn" -> "ERC721.ownerOf" [ color = "#1bc6a6" ];
+  "ERC721._burn" -> "ERC721._clearApproval" [ color = "#1bc6a6" ];
+  "ERC721._burn" -> "ERC721._burn" [ color = "#1bc6a6" ];
+  "ERC721._burn" -> "ERC721.ownerOf" [ color = "#1bc6a6" ];
+  "ERC721._transferFrom" -> "ERC721.ownerOf" [ color = "#1bc6a6" ];
+  "ERC721._transferFrom" -> "ERC721._clearApproval" [ color = "#1bc6a6" ];
+  "ERC721._checkOnERC721Received" -> "to.isContract" [ color = "white" ];
+  "ERC165.<Constructor>" -> "ERC165._registerInterface" [ color = "#1bc6a6" ];
+  "ERC721Enumerable.tokenOfOwnerByIndex" -> "ERC721Enumerable.balanceOf" [ color = "#1bc6a6" ];
+  "ERC721Enumerable.tokenByIndex" -> "ERC721Enumerable.totalSupply" [ color = "#1bc6a6" ];
+  "ERC721._transferFrom" -> "IERC721Enumerable._transferFrom" [ color = "white" ];
+  "ERC721._transferFrom" -> "ERC721Enumerable._removeTokenFromOwnerEnumeration" [ color = "#1bc6a6" ];
+  "ERC721._transferFrom" -> "ERC721Enumerable._addTokenToOwnerEnumeration" [ color = "#1bc6a6" ];
+  "ERC721._mint" -> "IERC721Enumerable._mint" [ color = "white" ];
+  "ERC721._mint" -> "ERC721Enumerable._addTokenToOwnerEnumeration" [ color = "#1bc6a6" ];
+  "ERC721._mint" -> "ERC721Enumerable._addTokenToAllTokensEnumeration" [ color = "#1bc6a6" ];
+  "ERC721._burn" -> "IERC721Enumerable._burn" [ color = "white" ];
+  "ERC721._burn" -> "ERC721Enumerable._removeTokenFromOwnerEnumeration" [ color = "#1bc6a6" ];
+  "ERC721._burn" -> "ERC721Enumerable._removeTokenFromAllTokensEnumeration" [ color = "#1bc6a6" ];
+  "ERC165.<Constructor>" -> "ERC165._registerInterface" [ color = "#1bc6a6" ];
+  "ERC721Metadata.tokenURI" -> "ERC721._exists" [ color = "#1bc6a6" ];
+  "ERC721Metadata._setTokenURI" -> "ERC721._exists" [ color = "#1bc6a6" ];
+  "ERC721._burn" -> "IERC721Metadata._burn" [ color = "white" ];
+
+
+rankdir=LR
+node [shape=plaintext]
+subgraph cluster_01 { 
+label = "Legend";
+key [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+  <tr><td align="right" port="i1">Internal Call</td></tr>
+  <tr><td align="right" port="i2">External Call</td></tr>
+  <tr><td align="right" port="i3">Defined Contract</td></tr>
+  <tr><td align="right" port="i4">Undefined Contract</td></tr>
+  </table>>]
+key2 [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+  <tr><td port="i1">&nbsp;&nbsp;&nbsp;</td></tr>
+  <tr><td port="i2">&nbsp;&nbsp;&nbsp;</td></tr>
+  <tr><td port="i3" bgcolor="#445773">&nbsp;&nbsp;&nbsp;</td></tr>
+  <tr><td port="i4">
+    <table border="1" cellborder="0" cellspacing="0" cellpadding="7" color="#e8726d">
+      <tr>
+       <td></td>
+      </tr>
+     </table>
+  </td></tr>
+  </table>>]
+key:i1:e -> key2:i1:w [color="#1bc6a6"]
+key:i2:e -> key2:i2:w [color="white"]
+}
+}
